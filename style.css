@@ -1,0 +1,163 @@
+body {
+  background-color: rgb(187, 154, 154);
+  font-family: Alegreya, Arial;
+}
+
+.modal {
+  background-color: lightpink;
+  width: 350px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+h2 {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.close-modal {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  padding-right: 2px;
+  padding-left: 1.2px;
+  padding-bottom: 2.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  cursor: pointer;
+}
+.close-modal:hover {
+  background-color: black;
+  color: white;
+}
+
+.radio-container {
+  margin-bottom: 10px;
+}
+
+.submit {
+  font-family: Alegreya, Arial;
+  font-weight: bold;
+  width: 100%;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 6px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s,
+    color 0.3s;
+}
+.submit:hover {
+  background-color: black;
+  color: white;
+}
+.submit:active {
+  opacity: 0.8;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 10%));
+  grid-template-rows: 200px;
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+
+.items {
+  background-color: rgb(233, 221, 221);
+  border-radius: 6px;
+  padding: 1rem;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(161, 93, 103);
+}
+
+.author, .pages, .radio-value {
+  text-align: end;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.delete-button {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.delete-button:hover {
+  color: rgb(219, 108, 108);
+  border-color: rgb(219, 108, 108);
+}
+
+.add-icon-container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-icon-container img {
+  height: 80px;
+  cursor: pointer;
+}
+
+.last-item {
+  background-color: rgb(167, 149, 149);
+  cursor: pointer;
+  transition: opacity 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.last-item:hover {
+  opacity: 0.7;
+}
+.last-item:active {
+  opacity: 0.5;
+}
+
+.add-book {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.empty-library {
+  color: lightgray;
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 48px;
+}

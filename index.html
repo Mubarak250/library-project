@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Library Project</title>
+  </head>
+  <body>
+    <dialog class="modal" data-modal>
+      <div class="close-modal" data-close-modal>&times;</div>
+      <h2>Add To Library</h2>
+      <form class="form" method="dialog">
+        <div>
+          <label class="input-label" for="book_title">Book Title:</label>
+        </div>
+        <input class="book-title input" type="text" id="book_title" name="book_title" required>
+        <div>
+          <label class="input-label" for="book_author">Book Author:</label>
+        </div>
+        <input class="book-author input" type="text" id="book_author" name="book_author" required>
+        <div>
+          <label class="input-label" for="page_number">Number of Pages:</label>
+        </div>
+        <input class="page-number input" type="number" id="page_number" name="page_number" required>
+        <div class="radio-container">
+          <input class="read-book" type="radio" id="read" name="read_book" value="Already Read" required>
+          <label for="read">Read</label>
+
+          <input class="read-book" type="radio" id="not_read" name="read_book" value="Not Read Yet" required>
+          <label for="not_read">Not Read</label>
+        </div>
+        <button class="submit" type="submit">Add to Library</button>
+      </form>
+    </dialog>
+        
+
+    <h1>My Library</h1>
+    <div class="grid-container">
+      <div data-open-modal class="items add-icon-container last-item">
+        <img src="icons/add-icon.svg">
+        <div class="add-book">Add New Book</div>
+      </div>
+    </div>
+
+    <div class="empty-library">Library is Empty :-\</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
